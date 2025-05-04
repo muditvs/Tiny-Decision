@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiny Decisions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tiny Decisions</h1>
+
+    <div class="form-box">
+      <form id="decision-form">
+        <input type="text" id="decision-title" placeholder="Decision Title" required>
+        <textarea id="decision-pros" placeholder="Pros" rows="2"></textarea>
+        <textarea id="decision-cons" placeholder="Cons" rows="2"></textarea>
+        <select id="decision-status">
+          <option value="thinking">Thinking</option>
+          <option value="made">Made</option>
+        </select>
+        <button type="submit">Add Decision</button>
+      </form>
+    </div>
+
+    <h2>Decision History</h2>
+    <ul id="decision-history"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
